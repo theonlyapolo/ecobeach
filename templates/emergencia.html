@@ -1,0 +1,307 @@
+{% extends "base.html" %}
+
+{% block title %}Central de Emergência - EcoBeach{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="display-4 fw-bold text-danger">
+                <i class="fas fa-phone me-3"></i>Central de Emergência
+            </h1>
+            <p class="lead">Números importantes e localização de serviços essenciais</p>
+        </div>
+    </div>
+
+    <!-- Emergency Numbers -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-phone-alt me-2"></i>Números de Emergência
+            </h2>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="emergency-card bg-danger text-white">
+                <div class="emergency-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h4>190</h4>
+                <h6>Polícia Militar</h6>
+                <p>Emergências policiais, crimes em andamento, distúrbios</p>
+                <a href="tel:190" class="btn btn-light btn-sm">
+                    <i class="fas fa-phone me-1"></i>Ligar
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="emergency-card bg-warning text-dark">
+                <div class="emergency-icon">
+                    <i class="fas fa-ambulance"></i>
+                </div>
+                <h4>192</h4>
+                <h6>SAMU</h6>
+                <p>Emergências médicas, primeiros socorros, ambulância</p>
+                <a href="tel:192" class="btn btn-dark btn-sm">
+                    <i class="fas fa-phone me-1"></i>Ligar
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="emergency-card bg-primary text-white">
+                <div class="emergency-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h4>193</h4>
+                <h6>Bombeiros</h6>
+                <p>Incêndios, salvamentos, emergências aquáticas</p>
+                <a href="tel:193" class="btn btn-light btn-sm">
+                    <i class="fas fa-phone me-1"></i>Ligar
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="emergency-card bg-success text-white">
+                <div class="emergency-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h4>0800</h4>
+                <h6>Linha Verde</h6>
+                <p>Denúncias ambientais, crimes contra a natureza</p>
+                <a href="tel:08006432323" class="btn btn-light btn-sm">
+                    <i class="fas fa-phone me-1"></i>Ligar
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Local Emergency Contacts -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-map-marker-alt me-2"></i>Contatos Locais
+            </h2>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card border-info">
+                <div class="card-header bg-info text-white">
+                    <h5><i class="fas fa-hospital me-2"></i>Saúde em São Mateus</h5>
+                </div>
+                <div class="card-body">
+                    <div class="contact-item">
+                        <strong>Hospital Roberto Silvares</strong>
+                        <p><i class="fas fa-map-marker-alt me-1"></i>Av. Jones dos Santos Neves, 1000</p>
+                        <p><i class="fas fa-phone me-1"></i>(27) 3763-2700</p>
+                    </div>
+                    <hr>
+                    <div class="contact-item">
+                        <strong>UPA São Mateus</strong>
+                        <p><i class="fas fa-map-marker-alt me-1"></i>Rua Presidente Vargas, 123</p>
+                        <p><i class="fas fa-phone me-1"></i>(27) 3763-3000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card border-success">
+                <div class="card-header bg-success text-white">
+                    <h5><i class="fas fa-pills me-2"></i>Farmácias 24h</h5>
+                </div>
+                <div class="card-body">
+                    <div class="contact-item">
+                        <strong>Farmácia São Mateus</strong>
+                        <p><i class="fas fa-map-marker-alt me-1"></i>Av. Presidente Vargas, 456</p>
+                        <p><i class="fas fa-phone me-1"></i>(27) 3763-1200</p>
+                        <span class="badge bg-success">24 horas</span>
+                    </div>
+                    <hr>
+                    <div class="contact-item">
+                        <strong>Drogaria Popular</strong>
+                        <p><i class="fas fa-map-marker-alt me-1"></i>Centro de Guriri</p>
+                        <p><i class="fas fa-phone me-1"></i>(27) 3763-1500</p>
+                        <span class="badge bg-warning">8h às 22h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Environmental Emergency -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="mb-0">
+                        <i class="fas fa-exclamation-triangle me-2"></i>Denúncias Ambientais
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>O que denunciar:</h5>
+                            <ul>
+                                <li>Pesca predatória ou em período de defeso</li>
+                                <li>Captura de tartarugas marinhas</li>
+                                <li>Destruição de áreas de restinga</li>
+                                <li>Poluição marinha</li>
+                                <li>Descarte irregular de lixo</li>
+                                <li>Construções irregulares na praia</li>
+                                <li>Maus-tratos a animais marinhos</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Canais de denúncia:</h5>
+                            <div class="contact-item mb-3">
+                                <strong>Linha Verde Nacional</strong>
+                                <p><i class="fas fa-phone me-1"></i>0800-61-8080</p>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <strong>IBAMA - ES</strong>
+                                <p><i class="fas fa-phone me-1"></i>(27) 3325-3100</p>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <strong>Polícia Ambiental</strong>
+                                <p><i class="fas fa-phone me-1"></i>(27) 3636-8500</p>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Prefeitura São Mateus</strong>
+                                <p><i class="fas fa-phone me-1"></i>(27) 3763-8000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Safety Tips -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-life-ring me-2"></i>Dicas de Segurança
+            </h2>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5><i class="fas fa-swimmer me-2"></i>Segurança na Praia</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="safety-tips">
+                        <li>Nade sempre em áreas com salva-vidas</li>
+                        <li>Respeite as bandeiras de sinalização</li>
+                        <li>Evite entrar no mar sozinho</li>
+                        <li>Use protetor solar e se hidrate</li>
+                        <li>Cuidado com correntes marítimas</li>
+                        <li>Não deixe crianças desacompanhadas</li>
+                        <li>Evite nadar ao amanhecer e entardecer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-warning text-dark">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Segurança Pessoal</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="safety-tips">
+                        <li>Não ostente objetos de valor</li>
+                        <li>Evite caminhar sozinho à noite</li>
+                        <li>Mantenha documentos em local seguro</li>
+                        <li>Informe alguém sobre seus planos</li>
+                        <li>Tenha sempre contatos de emergência</li>
+                        <li>Conheça a região antes de explorar</li>
+                        <li>Use calçados adequados para trilhas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emergency Kit -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card bg-light">
+                <div class="card-header">
+                    <h3 class="text-center mb-0">
+                        <i class="fas fa-first-aid me-2"></i>Kit de Emergência Recomendado
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6><i class="fas fa-band-aid me-1"></i>Primeiros Socorros</h6>
+                            <ul class="small">
+                                <li>Bandagens</li>
+                                <li>Antisséptico</li>
+                                <li>Analgésicos</li>
+                                <li>Termômetro</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h6><i class="fas fa-sun me-1"></i>Proteção Solar</h6>
+                            <ul class="small">
+                                <li>Protetor solar FPS 60+</li>
+                                <li>Chapéu ou boné</li>
+                                <li>Óculos de sol</li>
+                                <li>Água para hidratação</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h6><i class="fas fa-mobile-alt me-1"></i>Comunicação</h6>
+                            <ul class="small">
+                                <li>Celular carregado</li>
+                                <li>Power bank</li>
+                                <li>Lista de contatos</li>
+                                <li>Apito de emergência</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h6><i class="fas fa-tools me-1"></i>Utilitários</h6>
+                            <ul class="small">
+                                <li>Lanterna</li>
+                                <li>Canivete multiuso</li>
+                                <li>Sacos plásticos</li>
+                                <li>Corda pequena</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Add click to call functionality
+document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (!confirm('Deseja realmente fazer esta ligação?')) {
+            e.preventDefault();
+        }
+    });
+});
+
+// Emergency button animations
+document.querySelectorAll('.emergency-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.05)';
+        this.style.transition = 'transform 0.2s';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+    });
+});
+</script>
+{% endblock %}

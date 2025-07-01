@@ -1,0 +1,337 @@
+{% extends "base.html" %}
+
+{% block title %}Biodiversidade - EcoBeach{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="display-4 fw-bold text-ocean">
+                <i class="fas fa-leaf me-3"></i>Biodiversidade de Guriri
+            </h1>
+            <p class="lead">Explore a rica fauna e flora da região</p>
+        </div>
+    </div>
+
+    <!-- Species Tabs -->
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-pills nav-fill mb-4" id="speciesTabs">
+                <li class="nav-item">
+                    <button class="nav-link active" id="fauna-tab" data-bs-toggle="pill" data-bs-target="#fauna">
+                        <i class="fas fa-fish me-2"></i>Fauna Marinha
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="flora-tab" data-bs-toggle="pill" data-bs-target="#flora">
+                        <i class="fas fa-seedling me-2"></i>Flora Costeira
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="aves-tab" data-bs-toggle="pill" data-bs-target="#aves">
+                        <i class="fas fa-dove me-2"></i>Aves
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="conservacao-tab" data-bs-toggle="pill" data-bs-target="#conservacao">
+                        <i class="fas fa-shield-alt me-2"></i>Conservação
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- Fauna Marinha -->
+                <div class="tab-pane fade show active" id="fauna">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon">
+                                    <i class="fas fa-fish"></i>
+                                </div>
+                                <h5>Robalo</h5>
+                                <p class="scientific-name">Centropomus undecimalis</p>
+                                <p>Peixe muito comum nas águas de Guriri, importante para a pesca artesanal local.</p>
+                                <div class="species-status status-common">
+                                    <i class="fas fa-circle me-1"></i>Comum
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon">
+                                    <i class="fas fa-fish"></i>
+                                </div>
+                                <h5>Tainha</h5>
+                                <p class="scientific-name">Mugil liza</p>
+                                <p>Espécie migratória que passa pela região durante o inverno, sendo base da pesca tradicional.</p>
+                                <div class="species-status status-common">
+                                    <i class="fas fa-circle me-1"></i>Sazonal
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon">
+                                    <i class="fas fa-fish"></i>
+                                </div>
+                                <h5>Bagre Marinho</h5>
+                                <p class="scientific-name">Cathorops spixii</p>
+                                <p>Peixe de fundo muito apreciado na culinária local, frequente nas águas costeiras.</p>
+                                <div class="species-status status-common">
+                                    <i class="fas fa-circle me-1"></i>Abundante
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon">
+                                    <i class="fas fa-fish"></i>
+                                </div>
+                                <h5>Tartaruga Cabeçuda</h5>
+                                <p class="scientific-name">Caretta caretta</p>
+                                <p>Tartaruga marinha que desova nas praias de Guriri entre setembro e março.</p>
+                                <div class="species-status status-vulnerable">
+                                    <i class="fas fa-exclamation-triangle me-1"></i>Vulnerável
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon">
+                                    <i class="fas fa-fish"></i>
+                                </div>
+                                <h5>Baleia Jubarte</h5>
+                                <p class="scientific-name">Megaptera novaeangliae</p>
+                                <p>Avistada durante migração entre julho e novembro, espetáculo da natureza.</p>
+                                <div class="species-status status-protected">
+                                    <i class="fas fa-shield-alt me-1"></i>Protegida
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon">
+                                    <i class="fas fa-fish"></i>
+                                </div>
+                                <h5>Cavalo Marinho</h5>
+                                <p class="scientific-name">Hippocampus reidi</p>
+                                <p>Pequeno peixe encontrado em áreas de mangue e pradarias marinhas.</p>
+                                <div class="species-status status-vulnerable">
+                                    <i class="fas fa-exclamation-triangle me-1"></i>Vulnerável
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flora Costeira -->
+                <div class="tab-pane fade" id="flora">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon text-success">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <h5>Restinga</h5>
+                                <p class="scientific-name">Complexo vegetacional</p>
+                                <p>Vegetação adaptada ao ambiente salino, formando dunas e protegendo a costa.</p>
+                                <div class="species-status status-protected">
+                                    <i class="fas fa-shield-alt me-1"></i>Protegida
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon text-success">
+                                    <i class="fas fa-tree"></i>
+                                </div>
+                                <h5>Coqueiro</h5>
+                                <p class="scientific-name">Cocos nucifera</p>
+                                <p>Palmeira característica da região, importante para a economia local.</p>
+                                <div class="species-status status-common">
+                                    <i class="fas fa-circle me-1"></i>Abundante
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon text-success">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h5>Salsa da Praia</h5>
+                                <p class="scientific-name">Ipomoea pes-caprae</p>
+                                <p>Planta rasteira que ajuda na fixação das dunas costeiras.</p>
+                                <div class="species-status status-common">
+                                    <i class="fas fa-circle me-1"></i>Comum
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon text-success">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <h5>Capim Açu</h5>
+                                <p class="scientific-name">Panicum maximum</p>
+                                <p>Gramínea nativa importante para estabilização do solo costeiro.</p>
+                                <div class="species-status status-common">
+                                    <i class="fas fa-circle me-1"></i>Comum
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aves -->
+                <div class="tab-pane fade" id="aves">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon text-info">
+                                    <i class="fas fa-dove"></i>
+                                </div>
+                                <h5>Bem-te-vi</h5>
+                                <p class="scientific-name">Pitangus sulphuratus</p>
+                                <p>Ave muito comum na região, conhecida por seu canto característico.</p>
+                                <div class="species-status status-common">
+                                    <i class="fas fa-circle me-1"></i>Abundante
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon text-info">
+                                    <i class="fas fa-dove"></i>
+                                </div>
+                                <h5>Gaivota</h5>
+                                <p class="scientific-name">Larus dominicanus</p>
+                                <p>Ave marinha símbolo das praias, frequente em Guriri.</p>
+                                <div class="species-status status-common">
+                                    <i class="fas fa-circle me-1"></i>Comum
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4">
+                            <div class="species-card">
+                                <div class="species-icon text-info">
+                                    <i class="fas fa-dove"></i>
+                                </div>
+                                <h5>Garça Branca</h5>
+                                <p class="scientific-name">Ardea alba</p>
+                                <p>Grande ave que frequenta as áreas de mangue e estuários.</p>
+                                <div class="species-status status-common">
+                                    <i class="fas fa-circle me-1"></i>Comum
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conservação -->
+                <div class="tab-pane fade" id="conservacao">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-warning">
+                                <h4><i class="fas fa-exclamation-triangle me-2"></i>Ameaças Ambientais</h4>
+                                <ul class="mb-0">
+                                    <li>Poluição marinha por resíduos plásticos</li>
+                                    <li>Degradação de áreas de restinga</li>
+                                    <li>Pesca predatória</li>
+                                    <li>Desenvolvimento urbano desordenado</li>
+                                    <li>Mudanças climáticas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-6">
+                            <div class="card border-success">
+                                <div class="card-header bg-success text-white">
+                                    <h5><i class="fas fa-leaf me-2"></i>Projetos de Conservação</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Projeto Tamar - Proteção de tartarugas</li>
+                                        <li>Monitoramento de baleias</li>
+                                        <li>Recuperação de áreas de restinga</li>
+                                        <li>Educação ambiental nas escolas</li>
+                                        <li>Limpeza de praias</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card border-info">
+                                <div class="card-header bg-info text-white">
+                                    <h5><i class="fas fa-hands-helping me-2"></i>Como Ajudar</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Não deixe lixo na praia</li>
+                                        <li>Respeite as áreas de nidificação</li>
+                                        <li>Pratique pesca sustentável</li>
+                                        <li>Participe de mutirões de limpeza</li>
+                                        <li>Denuncie atividades irregulares</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card bg-primary text-white">
+                <div class="card-header">
+                    <h3 class="text-center mb-0">
+                        <i class="fas fa-question-circle me-2"></i>Quiz da Biodiversidade
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <p class="text-center">Teste seus conhecimentos sobre a fauna e flora de Guriri!</p>
+                    <div class="text-center">
+                        <button class="btn btn-light btn-lg" onclick="startQuiz()">
+                            <i class="fas fa-play me-2"></i>Iniciar Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div class="modal fade" id="quizModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quiz da Biodiversidade</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="quizContent">
+                    <!-- Quiz content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+{% endblock %}

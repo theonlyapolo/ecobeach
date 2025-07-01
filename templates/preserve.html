@@ -1,0 +1,424 @@
+{% extends "base.html" %}
+
+{% block title %}Preserve Guriri - EcoBeach{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="display-4 fw-bold text-ocean">
+                <i class="fas fa-recycle me-3"></i>Preserve Guriri
+            </h1>
+            <p class="lead">Dicas sustentáveis para preservar nossa praia</p>
+        </div>
+    </div>
+
+    <!-- Sustainability Tips -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-leaf me-2"></i>Dicas de Sustentabilidade
+            </h2>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="sustainability-card">
+                <div class="sustainability-icon">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+                <h5>Não Deixe Rastros</h5>
+                <p>Leve todo o lixo que produzir. Cada resíduo deixado na praia pode prejudicar a vida marinha por décadas.</p>
+                <div class="tip-actions">
+                    <span class="badge bg-success">Fácil</span>
+                    <span class="badge bg-primary">Essencial</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="sustainability-card">
+                <div class="sustainability-icon">
+                    <i class="fas fa-bottle-water"></i>
+                </div>
+                <h5>Use Garrafas Reutilizáveis</h5>
+                <p>Evite garrafas plásticas descartáveis. Uma garrafa reutilizável pode substituir centenas de descartáveis.</p>
+                <div class="tip-actions">
+                    <span class="badge bg-warning">Médio</span>
+                    <span class="badge bg-info">Economia</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="sustainability-card">
+                <div class="sustainability-icon">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <h5>Protetor Solar Ecológico</h5>
+                <p>Use protetores solares biodegradáveis que não agridem os corais e vida marinha.</p>
+                <div class="tip-actions">
+                    <span class="badge bg-success">Fácil</span>
+                    <span class="badge bg-danger">Urgente</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="sustainability-card">
+                <div class="sustainability-icon">
+                    <i class="fas fa-fish"></i>
+                </div>
+                <h5>Respeite a Vida Marinha</h5>
+                <p>Não toque, persiga ou alimente animais marinhos. Observe à distância e tire apenas fotografias.</p>
+                <div class="tip-actions">
+                    <span class="badge bg-success">Fácil</span>
+                    <span class="badge bg-primary">Vital</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="sustainability-card">
+                <div class="sustainability-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h5>Preserve as Dunas</h5>
+                <p>Não pise na vegetação de restinga. Use apenas os caminhos demarcados para acessar a praia.</p>
+                <div class="tip-actions">
+                    <span class="badge bg-warning">Atenção</span>
+                    <span class="badge bg-success">Proteção</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="sustainability-card">
+                <div class="sustainability-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h5>Transporte Sustentável</h5>
+                <p>Prefira bicicletas, caminhadas ou transporte público. Reduza a pegada de carbono da sua visita.</p>
+                <div class="tip-actions">
+                    <span class="badge bg-warning">Médio</span>
+                    <span class="badge bg-info">Saúde</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Waste Separation Guide -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-recycle me-2"></i>Guia de Coleta Seletiva
+            </h2>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="waste-card bg-success text-white">
+                <div class="waste-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h5>Orgânico</h5>
+                <ul class="waste-items">
+                    <li>Restos de comida</li>
+                    <li>Cascas de frutas</li>
+                    <li>Folhas e galhos</li>
+                    <li>Papel sujo</li>
+                </ul>
+                <div class="waste-color">
+                    <span class="color-indicator bg-brown"></span>
+                    Lixeira Marrom
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="waste-card bg-warning text-dark">
+                <div class="waste-icon">
+                    <i class="fas fa-bottle-water"></i>
+                </div>
+                <h5>Plástico</h5>
+                <ul class="waste-items">
+                    <li>Garrafas PET</li>
+                    <li>Embalagens</li>
+                    <li>Sacolas plásticas</li>
+                    <li>Copos descartáveis</li>
+                </ul>
+                <div class="waste-color">
+                    <span class="color-indicator bg-danger"></span>
+                    Lixeira Vermelha
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="waste-card bg-info text-white">
+                <div class="waste-icon">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <h5>Papel</h5>
+                <ul class="waste-items">
+                    <li>Jornais e revistas</li>
+                    <li>Papelão</li>
+                    <li>Papel de escritório</li>
+                    <li>Caixas</li>
+                </ul>
+                <div class="waste-color">
+                    <span class="color-indicator bg-primary"></span>
+                    Lixeira Azul
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="waste-card bg-secondary text-white">
+                <div class="waste-icon">
+                    <i class="fas fa-wine-bottle"></i>
+                </div>
+                <h5>Vidro</h5>
+                <ul class="waste-items">
+                    <li>Garrafas</li>
+                    <li>Potes</li>
+                    <li>Frascos</li>
+                    <li>Cacos de vidro</li>
+                </ul>
+                <div class="waste-color">
+                    <span class="color-indicator bg-success"></span>
+                    Lixeira Verde
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collection Points Map -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-map-marker-alt me-2"></i>Pontos de Coleta Seletiva
+            </h2>
+            <div class="card">
+                <div class="card-body">
+                    <div id="wasteMap" style="height: 400px; border-radius: 8px;"></div>
+                    <div class="mt-3">
+                        <h6>Legenda dos Pontos de Coleta:</h6>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span class="legend-dot bg-primary"></span>
+                                Coleta Seletiva Completa
+                            </div>
+                            <div class="col-md-3">
+                                <span class="legend-dot bg-success"></span>
+                                Reciclagem de Vidro
+                            </div>
+                            <div class="col-md-3">
+                                <span class="legend-dot bg-warning"></span>
+                                Coleta de Plástico
+                            </div>
+                            <div class="col-md-3">
+                                <span class="legend-dot bg-info"></span>
+                                Papel e Papelão
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Environmental Impact -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-chart-line me-2"></i>Impacto Ambiental
+            </h2>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h5><i class="fas fa-exclamation-triangle me-2"></i>Tempo de Decomposição</h5>
+                </div>
+                <div class="card-body">
+                    <div class="decomposition-item">
+                        <strong>Garrafa Plástica:</strong> <span class="text-danger">450 anos</span>
+                    </div>
+                    <div class="decomposition-item">
+                        <strong>Lata de Alumínio:</strong> <span class="text-warning">200 anos</span>
+                    </div>
+                    <div class="decomposition-item">
+                        <strong>Garrafa de Vidro:</strong> <span class="text-danger">4.000 anos</span>
+                    </div>
+                    <div class="decomposition-item">
+                        <strong>Bituca de Cigarro:</strong> <span class="text-warning">5 anos</span>
+                    </div>
+                    <div class="decomposition-item">
+                        <strong>Sacola Plástica:</strong> <span class="text-danger">100 anos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card border-success">
+                <div class="card-header bg-success text-white">
+                    <h5><i class="fas fa-leaf me-2"></i>Benefícios da Reciclagem</h5>
+                </div>
+                <div class="card-body">
+                    <div class="benefit-item">
+                        <i class="fas fa-tree text-success me-2"></i>
+                        <strong>1 tonelada de papel reciclado</strong> = 20 árvores preservadas
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-tint text-info me-2"></i>
+                        <strong>Vidro reciclado</strong> economiza 50% de água na produção
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-bolt text-warning me-2"></i>
+                        <strong>Alumínio reciclado</strong> usa 95% menos energia
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-globe text-primary me-2"></i>
+                        <strong>Plástico reciclado</strong> reduz poluição do ar em 86%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Challenges -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-trophy me-2"></i>Desafios Ambientais
+            </h2>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="challenge-card">
+                <div class="challenge-icon bg-success">
+                    <i class="fas fa-calendar-week"></i>
+                </div>
+                <h5>Desafio Semanal</h5>
+                <p>Use apenas garrafas reutilizáveis por uma semana inteira.</p>
+                <div class="challenge-progress">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width: 0%"></div>
+                    </div>
+                    <small>0/7 dias completados</small>
+                </div>
+                <button class="btn btn-success btn-sm mt-2" onclick="startWeeklyChallenge()">
+                    <i class="fas fa-play me-1"></i>Começar
+                </button>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="challenge-card">
+                <div class="challenge-icon bg-info">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h5>Desafio Comunitário</h5>
+                <p>Organize um mutirão de limpeza com amigos e família.</p>
+                <div class="challenge-progress">
+                    <div class="progress">
+                        <div class="progress-bar bg-info" style="width: 0%"></div>
+                    </div>
+                    <small>Aguardando participação</small>
+                </div>
+                <button class="btn btn-info btn-sm mt-2" onclick="joinCommunityChallenge()">
+                    <i class="fas fa-handshake me-1"></i>Participar
+                </button>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="challenge-card">
+                <div class="challenge-icon bg-warning">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h5>Desafio Fotográfico</h5>
+                <p>Documente ações sustentáveis em Guriri e compartilhe.</p>
+                <div class="challenge-progress">
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" style="width: 0%"></div>
+                    </div>
+                    <small>0/5 fotos enviadas</small>
+                </div>
+                <button class="btn btn-warning btn-sm mt-2" onclick="startPhotoChallenge()">
+                    <i class="fas fa-camera me-1"></i>Fotografar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card bg-ocean text-white">
+                <div class="card-body text-center py-5">
+                    <h3>Seja um Guardião de Guriri</h3>
+                    <p class="lead">Cada pequena ação faz a diferença na preservação da nossa praia</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="{{ url_for('emergencia') }}" class="btn btn-light btn-lg">
+                            <i class="fas fa-exclamation-triangle me-2"></i>Denunciar Poluição
+                        </a>
+                        <a href="{{ url_for('educativo') }}" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-graduation-cap me-2"></i>Aprender Mais
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Compartilhe suas ações sustentáveis:</h5>
+                        <div class="social-share">
+                            <span class="badge bg-light text-dark me-2">#PreserveGuriri</span>
+                            <span class="badge bg-light text-dark me-2">#EcoBeach</span>
+                            <span class="badge bg-light text-dark">#SustentabilidadeMarinha</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Initialize waste collection map
+function initWasteMap() {
+    // This would integrate with Google Maps to show collection points
+    // For now, we'll show a placeholder
+    const mapDiv = document.getElementById('wasteMap');
+    if (mapDiv) {
+        mapDiv.innerHTML = `
+            <div class="d-flex align-items-center justify-content-center h-100 bg-light rounded">
+                <div class="text-center">
+                    <i class="fas fa-map fa-3x text-muted mb-3"></i>
+                    <h5 class="text-muted">Mapa de Coleta Seletiva</h5>
+                    <p class="text-muted">Em breve, mapa interativo com todos os pontos de coleta de Guriri</p>
+                </div>
+            </div>
+        `;
+    }
+}
+
+// Challenge functions
+function startWeeklyChallenge() {
+    alert('Desafio semanal iniciado! Use apenas garrafas reutilizáveis pelos próximos 7 dias.');
+    // Here would be the logic to track progress
+}
+
+function joinCommunityChallenge() {
+    alert('Ótima iniciativa! Organize um mutirão de limpeza e convide sua comunidade.');
+}
+
+function startPhotoChallenge() {
+    alert('Desafio fotográfico ativado! Documente suas ações sustentáveis em Guriri.');
+}
+
+// Initialize map on page load
+document.addEventListener('DOMContentLoaded', function() {
+    initWasteMap();
+});
+</script>
+{% endblock %}

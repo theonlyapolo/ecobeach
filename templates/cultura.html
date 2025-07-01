@@ -1,0 +1,301 @@
+{% extends "base.html" %}
+
+{% block title %}Cultura Caiçara - EcoBeach{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="display-4 fw-bold text-ocean">
+                <i class="fas fa-utensils me-3"></i>Cultura e Culinária Caiçara
+            </h1>
+            <p class="lead">Descubra as tradições dos povos do mar</p>
+        </div>
+    </div>
+
+    <!-- Cultura Caiçara -->
+    <div class="row mb-5">
+        <div class="col-lg-6">
+            <h2 class="text-ocean">O Povo Caiçara</h2>
+            <p class="lead">
+                Os caiçaras são os habitantes tradicionais das regiões costeiras do litoral sudeste 
+                brasileiro, incluindo a região de Guriri.
+            </p>
+            <p>
+                Esta cultura única nasceu da miscigenação entre indígenas, africanos e portugueses, 
+                resultando em um modo de vida intimamente ligado ao mar, à pesca e à natureza. 
+                O nome "caiçara" deriva da palavra tupi "caá-içara", que significa "cerca de pau", 
+                referindo-se às armadilhas de pesca feitas com estacas.
+            </p>
+            <p>
+                Em Guriri, as tradições caiçaras se mantêm vivas através da pesca artesanal, 
+                da culinária típica, das festas populares e do conhecimento ancestral sobre 
+                os ciclos da natureza e do mar.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <div class="culture-stats">
+                <div class="stat-card">
+                    <i class="fas fa-ship fa-2x text-primary mb-2"></i>
+                    <h4>500+</h4>
+                    <p>Anos de tradição pesqueira</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users fa-2x text-success mb-2"></i>
+                    <h4>30+</h4>
+                    <p>Famílias de pescadores</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-music fa-2x text-warning mb-2"></i>
+                    <h4>12</h4>
+                    <p>Festas tradicionais anuais</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tradições -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">Tradições Caiçaras</h2>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="tradition-card">
+                <div class="tradition-icon">
+                    <i class="fas fa-anchor"></i>
+                </div>
+                <h5>Pesca Artesanal</h5>
+                <p>Técnicas tradicionais de pesca passadas de pai para filho, 
+                incluindo o uso de redes, tarrafas e canoas de madeira.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="tradition-card">
+                <div class="tradition-icon">
+                    <i class="fas fa-guitar"></i>
+                </div>
+                <h5>Música e Dança</h5>
+                <p>Fandango, catira e outras manifestações culturais que 
+                animam as festas e celebrações da comunidade.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="tradition-card">
+                <div class="tradition-icon">
+                    <i class="fas fa-hammer"></i>
+                </div>
+                <h5>Artesanato</h5>
+                <p>Produção de redes, cestas, instrumentos de pesca e 
+                objetos decorativos usando materiais naturais.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Culinária -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">Culinária Tradicional</h2>
+            <p class="text-center lead mb-5">
+                A gastronomia caiçara é rica em frutos do mar e temperos naturais
+            </p>
+        </div>
+        
+        <div class="col-lg-4 mb-4">
+            <div class="dish-card">
+                <div class="dish-header">
+                    <i class="fas fa-fish fa-2x text-primary"></i>
+                    <h4>Moqueca Capixaba</h4>
+                </div>
+                <div class="dish-content">
+                    <p><strong>Ingredientes:</strong> Peixe fresco, tomate, cebola, 
+                    coentro, urucum, azeite de dendê e leite de coco.</p>
+                    <p><strong>Preparo:</strong> Cozida em panela de barro, 
+                    mantendo os sabores autênticos da tradição caiçara.</p>
+                    <div class="dish-tags">
+                        <span class="badge bg-primary">Tradicional</span>
+                        <span class="badge bg-success">Patrimônio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 mb-4">
+            <div class="dish-card">
+                <div class="dish-header">
+                    <i class="fas fa-shrimp fa-2x text-danger"></i>
+                    <h4>Bobó de Camarão</h4>
+                </div>
+                <div class="dish-content">
+                    <p><strong>Ingredientes:</strong> Camarão fresco, mandioca, 
+                    leite de coco, dendê, cebola e temperos.</p>
+                    <p><strong>Preparo:</strong> Mandioca cozida e amassada, 
+                    refogada com camarão e temperos especiais.</p>
+                    <div class="dish-tags">
+                        <span class="badge bg-danger">Popular</span>
+                        <span class="badge bg-warning">Cremoso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 mb-4">
+            <div class="dish-card">
+                <div class="dish-header">
+                    <i class="fas fa-fish fa-2x text-info"></i>
+                    <h4>Casquinha de Caranguejo</h4>
+                </div>
+                <div class="dish-content">
+                    <p><strong>Ingredientes:</strong> Caranguejo, farinha de rosca, 
+                    queijo, leite, cebola e temperos.</p>
+                    <p><strong>Preparo:</strong> Carne de caranguejo refogada e 
+                    gratinada na própria casca.</p>
+                    <div class="dish-tags">
+                        <span class="badge bg-info">Especial</span>
+                        <span class="badge bg-secondary">Gratinado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 mb-4">
+            <div class="dish-card">
+                <div class="dish-header">
+                    <i class="fas fa-coconut fa-2x text-success"></i>
+                    <h4>Quindim de Coco</h4>
+                </div>
+                <div class="dish-content">
+                    <p><strong>Ingredientes:</strong> Coco ralado fresco, ovos, 
+                    açúcar e baunilha.</p>
+                    <p><strong>Preparo:</strong> Doce tradicional feito com coco 
+                    da região, assado em forminhas individuais.</p>
+                    <div class="dish-tags">
+                        <span class="badge bg-success">Doce</span>
+                        <span class="badge bg-warning">Regional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 mb-4">
+            <div class="dish-card">
+                <div class="dish-header">
+                    <i class="fas fa-fish fa-2x text-warning"></i>
+                    <h4>Pirão de Peixe</h4>
+                </div>
+                <div class="dish-content">
+                    <p><strong>Ingredientes:</strong> Farinha de mandioca, 
+                    caldo de peixe, temperos verdes.</p>
+                    <p><strong>Preparo:</strong> Farinha mexida no caldo fumegante 
+                    do peixe, criando consistência cremosa.</p>
+                    <div class="dish-tags">
+                        <span class="badge bg-warning">Básico</span>
+                        <span class="badge bg-primary">Nutritivo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 mb-4">
+            <div class="dish-card">
+                <div class="dish-header">
+                    <i class="fas fa-wine-bottle fa-2x text-purple"></i>
+                    <h4>Bebida de Caju</h4>
+                </div>
+                <div class="dish-content">
+                    <p><strong>Ingredientes:</strong> Caju maduro, açúcar, 
+                    água e especiarias locais.</p>
+                    <p><strong>Preparo:</strong> Bebida refrescante natural, 
+                    muito apreciada nas festas locais.</p>
+                    <div class="dish-tags">
+                        <span class="badge bg-purple">Refrescante</span>
+                        <span class="badge bg-success">Natural</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Festas e Celebrações -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">Festas e Celebrações</h2>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white">
+                    <h5><i class="fas fa-cross me-2"></i>Festa de São Pedro (29 de junho)</h5>
+                </div>
+                <div class="card-body">
+                    <p>Santo padroeiro dos pescadores, celebrado com procissão marítima, 
+                    bênção das embarcações e festa na praia com música e comida típica.</p>
+                    <p><strong>Tradições:</strong> Procissão, queima de fogos, 
+                    competição de canoas e apresentações culturais.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card border-success">
+                <div class="card-header bg-success text-white">
+                    <h5><i class="fas fa-music me-2"></i>Festival do Caranguejo (setembro)</h5>
+                </div>
+                <div class="card-body">
+                    <p>Celebração da temporada do caranguejo com concursos gastronômicos, 
+                    música ao vivo e exposição da cultura local.</p>
+                    <p><strong>Atrações:</strong> Shows musicais, feira gastronômica, 
+                    oficinas de artesanato e dança folclórica.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h5><i class="fas fa-fish me-2"></i>Festa da Tainha (julho)</h5>
+                </div>
+                <div class="card-body">
+                    <p>Comemoração da chegada das tainhas com pratos típicos, 
+                    competições de pesca e atividades para toda família.</p>
+                    <p><strong>Atividades:</strong> Torneio de pesca, degustação, 
+                    contação de histórias e brincadeiras infantis.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card border-info">
+                <div class="card-header bg-info text-white">
+                    <h5><i class="fas fa-calendar me-2"></i>Réveillon na Praia</h5>
+                </div>
+                <div class="card-body">
+                    <p>Celebração do ano novo na praia com queima de fogos, 
+                    shows musicais e tradições caiçaras de renovação.</p>
+                    <p><strong>Ritual:</strong> Oferendas ao mar, música ao vivo, 
+                    fogos de artifício e confraternização comunitária.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card bg-ocean text-white">
+                <div class="card-body text-center py-5">
+                    <h3>Vivencie a Cultura Caiçara</h3>
+                    <p class="lead">Participe das festas, prove a culinária típica e conheça as tradições locais</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="{{ url_for('mapa') }}" class="btn btn-light btn-lg">
+                            <i class="fas fa-utensils me-2"></i>Restaurantes Típicos
+                        </a>
+                        <a href="{{ url_for('educativo') }}" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-book me-2"></i>Saiba Mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

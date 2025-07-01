@@ -1,0 +1,692 @@
+/* EcoBeach - Custom Styles */
+:root {
+    --ocean-blue: #006994;
+    --ocean-light: #4a90a4;
+    --ocean-dark: #003d5b;
+    --sand-color: #f4f1e8;
+    --coral-color: #ff6b6b;
+    --seaweed-green: #51cf66;
+    --sunset-orange: #ff922b;
+    --wave-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --ocean-gradient: linear-gradient(135deg, #006994 0%, #4a90a4 100%);
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 76px; /* Account for fixed navbar */
+}
+
+/* Ocean Theme Colors */
+.bg-ocean {
+    background: var(--ocean-gradient) !important;
+}
+
+.text-ocean {
+    color: var(--ocean-blue) !important;
+}
+
+.btn-ocean {
+    background: var(--ocean-gradient);
+    border: none;
+    color: white;
+}
+
+.btn-ocean:hover {
+    background: var(--ocean-dark);
+    color: white;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 105, 148, 0.7), rgba(74, 144, 164, 0.7)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="wave" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M0,20 Q10,10 20,20 T40,20" stroke="%23ffffff" stroke-width="1" fill="none" opacity="0.1"/></pattern></defs><rect width="1200" height="600" fill="url(%23wave)"/></svg>');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Main Content */
+.main-content {
+    min-height: calc(100vh - 200px);
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 105, 148, 0.2);
+    border-color: var(--ocean-light);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--ocean-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Ocean Stats */
+.ocean-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--ocean-gradient);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 80px;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.6s ease;
+}
+
+.timeline-item.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 18px;
+    top: 8px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 0 4px var(--ocean-blue);
+}
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-header h4 {
+    color: var(--ocean-blue);
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Species Cards */
+.species-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.species-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.species-icon {
+    font-size: 2.5rem;
+    color: var(--ocean-blue);
+    margin-bottom: 1rem;
+}
+
+.scientific-name {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.species-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.status-common {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-vulnerable {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-protected {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Culture Cards */
+.tradition-card, .dish-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.tradition-card:hover, .dish-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tradition-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--ocean-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.dish-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dish-tags {
+    margin-top: 1rem;
+}
+
+.culture-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Map Styles */
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.map-controls {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.legend-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.selected-point-info {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Emergency Cards */
+.emergency-card {
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.emergency-card:hover {
+    transform: scale(1.05);
+}
+
+.emergency-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-item {
+    margin-bottom: 1rem;
+}
+
+.safety-tips {
+    list-style: none;
+    padding: 0;
+}
+
+.safety-tips li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.safety-tips li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.fact-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Educational Styles */
+.video-card, .infographic-card, .activity-card, .resource-card {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.video-card:hover, .infographic-card:hover, .activity-card:hover, .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-thumbnail, .infographic-preview {
+    height: 150px;
+    background: var(--ocean-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.video-placeholder, .infographic-placeholder {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Preserve Page Styles */
+.sustainability-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 2px solid transparent;
+}
+
+.sustainability-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--seaweed-green);
+    box-shadow: 0 8px 20px rgba(81, 207, 102, 0.2);
+}
+
+.sustainability-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--seaweed-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.tip-actions {
+    margin-top: 1rem;
+}
+
+.waste-card {
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.waste-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.waste-items {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.waste-items li {
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.waste-color {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.color-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bg-brown {
+    background-color: #8b4513;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.decomposition-item, .benefit-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.decomposition-item:last-child, .benefit-item:last-child {
+    border-bottom: none;
+}
+
+.challenge-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.challenge-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.challenge-progress {
+    margin: 1rem 0;
+}
+
+.social-share {
+    margin-top: 1rem;
+}
+
+/* Purple badge color */
+.bg-purple {
+    background-color: #6f42c1 !important;
+}
+
+.badge.bg-purple {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .timeline::before {
+        left: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .timeline-marker {
+        left: 3px;
+    }
+    
+    .ocean-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .culture-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .map-controls .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .map-controls .btn {
+        border-radius: 0.375rem !important;
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.75rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .feature-card, .species-card, .tradition-card, .dish-card, .sustainability-card {
+        padding: 1rem;
+    }
+    
+    .feature-icon, .sustainability-icon, .tradition-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+    
+    .emergency-card, .waste-card, .challenge-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Accessibility */
+.btn:focus, .nav-link:focus {
+    box-shadow: 0 0 0 3px rgba(0, 105, 148, 0.25);
+    outline: none;
+}
+
+/* Print Styles */
+@media print {
+    .navbar, .footer, .btn, .modal {
+        display: none !important;
+    }
+    
+    .main-content {
+        padding-top: 0 !important;
+    }
+    
+    .hero-section {
+        height: auto;
+        background: none;
+        color: black;
+    }
+}

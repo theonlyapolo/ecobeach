@@ -1,0 +1,631 @@
+{% extends "base.html" %}
+
+{% block title %}Projeto Tamar - {{ super() }}{% endblock %}
+
+{% block extra_css %}
+<style>
+    .hero-tamar {
+        background: linear-gradient(135deg, #004d40 0%, #00695c 50%, #26a69a 100%);
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .turtle-card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+    }
+    
+    .turtle-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+    
+    .species-badge {
+        background: linear-gradient(45deg, #00695c, #26a69a);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    .conservation-status {
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    .status-critical { background-color: #ff5252; color: white; }
+    .status-endangered { background-color: #ff9800; color: white; }
+    .status-vulnerable { background-color: #ffc107; color: #333; }
+    
+    .timeline-item {
+        border-left: 3px solid #26a69a;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        top: 0;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #26a69a;
+    }
+    
+    .stats-card {
+        background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+        border-radius: 15px;
+        padding: 25px;
+        text-align: center;
+        height: 100%;
+    }
+    
+    .stats-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2e7d32;
+        margin-bottom: 10px;
+    }
+    
+    .visit-info {
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        border-radius: 15px;
+        padding: 30px;
+        margin-top: 30px;
+    }
+    
+    .threat-item {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        border-left: 4px solid #ff5722;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .action-card {
+        background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+        border-radius: 15px;
+        padding: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-tamar">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4 fw-bold mb-4">
+                    <i class="fas fa-turtle me-3"></i>Projeto Tamar
+                </h1>
+                <p class="lead mb-4">
+                    Conservação de tartarugas marinhas em São Mateus - ES<br>
+                    Protegendo as espécies desde 1980
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <span class="badge bg-light text-dark px-3 py-2">
+                        <i class="fas fa-calendar me-1"></i>44 anos de história
+                    </span>
+                    <span class="badge bg-light text-dark px-3 py-2">
+                        <i class="fas fa-turtle me-1"></i>5 espécies protegidas
+                    </span>
+                    <span class="badge bg-light text-dark px-3 py-2">
+                        <i class="fas fa-eggs me-1"></i>Milhares de filhotes liberados
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sobre o Projeto -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Sobre o Projeto</h2>
+                    <p class="text-muted">O maior programa de conservação marinha do Brasil</p>
+                </div>
+                
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <p class="lead">
+                            O Projeto Tamar (Tartarugas Marinhas) é um programa brasileiro de conservação de tartarugas marinhas, 
+                            reconhecido internacionalmente pelos seus resultados na proteção dessas espécies ameaçadas.
+                        </p>
+                        <p>
+                            Em São Mateus, no Espírito Santo, o projeto atua desde os anos 80, protegendo importantes áreas de 
+                            desova na região de Guriri e conscientizando a população local sobre a importância da conservação 
+                            marinha.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Estatísticas -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Resultados em São Mateus</h2>
+            <p class="text-muted">Impacto da conservação na região</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="stats-card">
+                    <div class="stats-number">40+</div>
+                    <h5>Anos de Atuação</h5>
+                    <p class="text-muted small">Desde 1982 na região</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stats-card">
+                    <div class="stats-number">50K+</div>
+                    <h5>Filhotes Liberados</h5>
+                    <p class="text-muted small">Ao longo dos anos</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stats-card">
+                    <div class="stats-number">15km</div>
+                    <h5>Praia Monitorada</h5>
+                    <p class="text-muted small">Guriri e região</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stats-card">
+                    <div class="stats-number">200+</div>
+                    <h5>Ninhos/Ano</h5>
+                    <p class="text-muted small">Média anual</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Espécies de Tartarugas -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Espécies Protegidas</h2>
+            <p class="text-muted">Tartarugas marinhas que desovam em Guriri</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="turtle-card card h-100">
+                    <div class="card-body p-4">
+                        <div class="species-badge">Caretta caretta</div>
+                        <h4 class="card-title text-primary">Tartaruga-Cabeçuda</h4>
+                        <span class="conservation-status status-vulnerable">Vulnerável</span>
+                        
+                        <div class="mt-3">
+                            <p><strong>Características:</strong></p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-ruler me-2 text-muted"></i>Até 1,2m de comprimento</li>
+                                <li><i class="fas fa-weight me-2 text-muted"></i>Até 180kg</li>
+                                <li><i class="fas fa-map-marker me-2 text-muted"></i>Principal espécie em Guriri</li>
+                            </ul>
+                            <p class="text-muted">
+                                Alimenta-se principalmente de crustáceos, moluscos e peixes. 
+                                É a espécie mais comum nas praias de São Mateus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="turtle-card card h-100">
+                    <div class="card-body p-4">
+                        <div class="species-badge">Dermochelys coriacea</div>
+                        <h4 class="card-title text-primary">Tartaruga-de-Couro</h4>
+                        <span class="conservation-status status-critical">Criticamente Ameaçada</span>
+                        
+                        <div class="mt-3">
+                            <p><strong>Características:</strong></p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-ruler me-2 text-muted"></i>Até 2m de comprimento</li>
+                                <li><i class="fas fa-weight me-2 text-muted"></i>Até 700kg</li>
+                                <li><i class="fas fa-exclamation-triangle me-2 text-muted"></i>Maior tartaruga marinha</li>
+                            </ul>
+                            <p class="text-muted">
+                                Alimenta-se de águas-vivas. Possui casco flexível sem placas duras. 
+                                Visitas ocasionais às praias de Guriri.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="turtle-card card h-100">
+                    <div class="card-body p-4">
+                        <div class="species-badge">Chelonia mydas</div>
+                        <h4 class="card-title text-primary">Tartaruga-Verde</h4>
+                        <span class="conservation-status status-endangered">Em Perigo</span>
+                        
+                        <div class="mt-3">
+                            <p><strong>Características:</strong></p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-ruler me-2 text-muted"></i>Até 1,5m de comprimento</li>
+                                <li><i class="fas fa-weight me-2 text-muted"></i>Até 230kg</li>
+                                <li><i class="fas fa-leaf me-2 text-muted"></i>Alimentação herbívora</li>
+                            </ul>
+                            <p class="text-muted">
+                                Única espécie herbívora, alimenta-se de algas e plantas aquáticas. 
+                                Desova eventualmente em Guriri.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="turtle-card card h-100">
+                    <div class="card-body p-4">
+                        <div class="species-badge">Eretmochelys imbricata</div>
+                        <h4 class="card-title text-primary">Tartaruga-de-Pente</h4>
+                        <span class="conservation-status status-critical">Criticamente Ameaçada</span>
+                        
+                        <div class="mt-3">
+                            <p><strong>Características:</strong></p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-ruler me-2 text-muted"></i>Até 90cm de comprimento</li>
+                                <li><i class="fas fa-weight me-2 text-muted"></i>Até 80kg</li>
+                                <li><i class="fas fa-gem me-2 text-muted"></i>Casco ornamental valioso</li>
+                            </ul>
+                            <p class="text-muted">
+                                Alimenta-se de esponjas marinhas. Casco historicamente usado para artesanato, 
+                                o que levou ao declínio da espécie.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ameaças e Conservação -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <h3 class="mb-4"><i class="fas fa-exclamation-triangle text-danger me-2"></i>Principais Ameaças</h3>
+                
+                <div class="threat-item">
+                    <h5><i class="fas fa-lightbulb text-warning me-2"></i>Poluição Luminosa</h5>
+                    <p class="mb-0">Luzes artificiais confundem filhotes, que se dirigem para longe do mar.</p>
+                </div>
+                
+                <div class="threat-item">
+                    <h5><i class="fas fa-trash text-danger me-2"></i>Lixo Marinho</h5>
+                    <p class="mb-0">Plásticos e resíduos causam ferimentos e morte por ingestão.</p>
+                </div>
+                
+                <div class="threat-item">
+                    <h5><i class="fas fa-anchor text-info me-2"></i>Pesca Acidental</h5>
+                    <p class="mb-0">Captura não intencional em redes de pesca e anzóis.</p>
+                </div>
+                
+                <div class="threat-item">
+                    <h5><i class="fas fa-umbrella-beach text-warning me-2"></i>Perturbação Humana</h5>
+                    <p class="mb-0">Pisoteio de ninhos e distúrbio durante a desova.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <h3 class="mb-4"><i class="fas fa-shield-alt text-success me-2"></i>Ações de Conservação</h3>
+                
+                <div class="action-card">
+                    <i class="fas fa-search fa-2x text-primary mb-3"></i>
+                    <h5>Monitoramento de Ninhos</h5>
+                    <p class="mb-0">Patrulhamento noturno das praias durante a temporada reprodutiva</p>
+                </div>
+                
+                <div class="action-card">
+                    <i class="fas fa-graduation-cap fa-2x text-success mb-3"></i>
+                    <h5>Educação Ambiental</h5>
+                    <p class="mb-0">Programas educativos para escolas e comunidade local</p>
+                </div>
+                
+                <div class="action-card">
+                    <i class="fas fa-microscope fa-2x text-info mb-3"></i>
+                    <h5>Pesquisa Científica</h5>
+                    <p class="mb-0">Estudos sobre comportamento, migração e biologia reprodutiva</p>
+                </div>
+                
+                <div class="action-card">
+                    <i class="fas fa-hands-helping fa-2x text-warning mb-3"></i>
+                    <h5>Envolvimento Comunitário</h5>
+                    <p class="mb-0">Capacitação de pescadores e moradores como colaboradores</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ciclo de Vida -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Ciclo de Vida das Tartarugas</h2>
+            <p class="text-muted">Do nascimento ao retorno para reprodução</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="timeline-item">
+                    <h5><i class="fas fa-egg me-2 text-warning"></i>Desova (Novembro - Março)</h5>
+                    <p>
+                        Fêmeas adultas retornam às praias onde nasceram para desovar. Cada ninho contém 
+                        entre 80-150 ovos, que são enterrados na areia a 40-60cm de profundidade.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h5><i class="fas fa-thermometer-half me-2 text-info"></i>Incubação (45-65 dias)</h5>
+                    <p>
+                        A temperatura da areia determina o sexo dos filhotes. Temperaturas mais altas 
+                        resultam em mais fêmeas, temperaturas mais baixas em mais machos.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h5><i class="fas fa-baby me-2 text-success"></i>Nascimento</h5>
+                    <p>
+                        Filhotes eclodem durante a noite e se dirigem ao mar guiados pela luz natural 
+                        do horizonte oceânico. Esta fase é extremamente vulnerável.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h5><i class="fas fa-swimmer me-2 text-primary"></i>Desenvolvimento (15-30 anos)</h5>
+                    <p>
+                        Jovens tartarugas passam anos no oceano aberto, alimentando-se e crescendo 
+                        até atingir a maturidade sexual entre 15-30 anos de idade.
+                    </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h5><i class="fas fa-home me-2 text-purple"></i>Retorno</h5>
+                    <p>
+                        Fêmeas adultas retornam às mesmas praias onde nasceram para desovar, 
+                        perpetuando o ciclo de vida da espécie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Informações para Visitantes -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="visit-info">
+                    <div class="text-center mb-4">
+                        <h3><i class="fas fa-info-circle me-2"></i>Centro de Visitantes</h3>
+                        <p class="text-muted">Venha conhecer o trabalho do Projeto Tamar</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-map-marker-alt me-2 text-primary"></i>Localização</h5>
+                            <p>Av. Beira Mar, s/n - Guriri<br>São Mateus - ES</p>
+                            
+                            <h5><i class="fas fa-clock me-2 text-success"></i>Horários</h5>
+                            <p>Terça a Domingo: 9h às 17h<br>Fechado às segundas-feiras</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-phone me-2 text-info"></i>Contato</h5>
+                            <p>(27) 3763-1500<br>guriri@tamar.org.br</p>
+                            
+                            <h5><i class="fas fa-ticket-alt me-2 text-warning"></i>Ingressos</h5>
+                            <p>Adultos: R$ 25<br>Crianças (6-12): R$ 15<br>Até 5 anos: Gratuito</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 p-3 bg-white rounded">
+                        <h6><i class="fas fa-star me-2 text-warning"></i>Atrações</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-check me-2 text-success"></i>Aquários com tartarugas</li>
+                            <li><i class="fas fa-check me-2 text-success"></i>Exposição interativa</li>
+                            <li><i class="fas fa-check me-2 text-success"></i>Loja de souvenirs</li>
+                            <li><i class="fas fa-check me-2 text-success"></i>Soltura de filhotes (temporada)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Como Ajudar -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Como Você Pode Ajudar</h2>
+            <p class="text-muted">Ações simples que fazem a diferença</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-lightbulb fa-3x text-warning mb-3"></i>
+                        <h5>Reduza Luzes na Praia</h5>
+                        <p>Evite luzes diretas na praia durante a noite na temporada reprodutiva.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-trash-alt fa-3x text-success mb-3"></i>
+                        <h5>Não Deixe Lixo</h5>
+                        <p>Recolha sempre seu lixo e evite plásticos descartáveis nas praias.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-exclamation-triangle fa-3x text-danger mb-3"></i>
+                        <h5>Reporte Ocorrências</h5>
+                        <p>Encontrou uma tartaruga ou ninho? Contate imediatamente o Projeto Tamar.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-walking fa-3x text-info mb-3"></i>
+                        <h5>Caminhe Conscientemente</h5>
+                        <p>Evite pisar em áreas de nidificação e mantenha distância das tartarugas.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-heart fa-3x text-danger mb-3"></i>
+                        <h5>Adote uma Tartaruga</h5>
+                        <p>Contribua financeiramente com o projeto através do programa de adoção.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-share-alt fa-3x text-primary mb-3"></i>
+                        <h5>Divulgue</h5>
+                        <p>Compartilhe informações sobre conservação nas redes sociais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Emergência Tartarugas -->
+<section class="py-4 bg-danger text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h4 class="mb-1"><i class="fas fa-phone-alt me-2"></i>Emergência Tartaruga</h4>
+                <p class="mb-0">Encontrou uma tartaruga ferida ou desorientada? Ligue imediatamente!</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="tel:2737631500" class="btn btn-light btn-lg">
+                    <i class="fas fa-phone me-2"></i>(27) 3763-1500
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Smooth scrolling for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Animation on scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe cards for animation
+document.querySelectorAll('.turtle-card, .stats-card, .action-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(card);
+});
+
+// Counter animation for stats
+function animateCounters() {
+    const counters = document.querySelectorAll('.stats-number');
+    counters.forEach(counter => {
+        const target = parseInt(counter.textContent.replace(/\D/g, ''));
+        const suffix = counter.textContent.replace(/[\d]/g, '');
+        let current = 0;
+        const increment = target / 100;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                counter.textContent = target + suffix;
+                clearInterval(timer);
+            } else {
+                counter.textContent = Math.floor(current) + suffix;
+            }
+        }, 20);
+    });
+}
+
+// Animate counters when they come into view
+const statsSection = document.querySelector('.stats-card');
+if (statsSection) {
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+                statsObserver.unobserve(entry.target);
+            }
+        });
+    });
+    statsObserver.observe(document.querySelector('.py-5.bg-light'));
+}
+</script>
+{% endblock %}

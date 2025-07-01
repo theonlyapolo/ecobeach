@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "nome": "Tartaruga Cabeçuda",
+    "nome_cientifico": "Caretta caretta",
+    "categoria": "reptil",
+    "habitat": "marinho",
+    "status_conservacao": "vulneravel",
+    "descricao": "A tartaruga-cabeçuda é a espécie que mais frequentemente desova nas praias de Guriri. Adultos podem pesar até 180kg e viver mais de 80 anos.",
+    "curiosidades": [
+      "Podem mergulhar até 300 metros de profundidade",
+      "Retornam à mesma praia onde nasceram para desovar",
+      "Uma fêmea pode colocar até 120 ovos por ninho"
+    ],
+    "periodo_reproducao": "setembro a março",
+    "ameacas": [
+      "Poluição marinha por plástico",
+      "Iluminação artificial nas praias",
+      "Pesca acidental",
+      "Desenvolvimento costeiro desordenado"
+    ],
+    "importancia_ecologica": "Controlam populações de águas-vivas e contribuem para o equilíbrio dos ecossistemas marinhos"
+  },
+  {
+    "id": 2,
+    "nome": "Robalo",
+    "nome_cientifico": "Centropomus undecimalis",
+    "categoria": "peixe",
+    "habitat": "estuarino_marinho",
+    "status_conservacao": "comum",
+    "descricao": "Peixe muito valorizado na pesca artesanal de Guriri, conhecido por sua carne saborosa e importância econômica para as comunidades pesqueiras.",
+    "curiosidades": [
+      "Podem viver até 20 anos",
+      "Mudam de sexo durante a vida: nascem machos e podem se tornar fêmeas",
+      "São predadores de emboscada, preferindo águas com estruturas"
+    ],
+    "periodo_reproducao": "outubro a fevereiro",
+    "ameacas": [
+      "Sobrepesca",
+      "Destruição de manguezais",
+      "Poluição das águas costeiras"
+    ],
+    "importancia_ecologica": "Predador importante no controle de populações de peixes menores e crustáceos"
+  },
+  {
+    "id": 3,
+    "nome": "Tainha",
+    "nome_cientifico": "Mugil liza",
+    "categoria": "peixe",
+    "habitat": "marinho",
+    "status_conservacao": "sazonal",
+    "descricao": "Espécie migratória que forma grandes cardumes durante o inverno, sendo a base da pesca tradicional caiçara em Guriri.",
+    "curiosidades": [
+      "Migram em cardumes de milhares de indivíduos",
+      "Podem saltar até 1 metro fora da água",
+      "Se alimentam principalmente de algas e detritos orgânicos"
+    ],
+    "periodo_reproducao": "maio a setembro",
+    "ameacas": [
+      "Pesca intensiva durante a migração",
+      "Mudanças climáticas alterando rotas migratórias",
+      "Poluição marinha"
+    ],
+    "importancia_ecologica": "Transferem nutrientes entre ecossistemas e são importantes na cadeia alimentar marinha"
+  },
+  {
+    "id": 4,
+    "nome": "Baleia Jubarte",
+    "nome_cientifico": "Megaptera novaeangliae",
+    "categoria": "mamifero",
+    "habitat": "marinho",
+    "status_conservacao": "protegida",
+    "descricao": "Majestosa baleia que migra pela costa de Guriri entre julho e novembro, oferecendo um espetáculo único aos observadores.",
+    "curiosidades": [
+      "Podem medir até 16 metros e pesar 40 toneladas",
+      "Suas canções podem ser ouvidas a 30km de distância",
+      "Migram até 25.000km por ano, a maior migração de qualquer mamífero"
+    ],
+    "periodo_reproducao": "julho a novembro (reprodução na Bahia)",
+    "ameacas": [
+      "Colisões com embarcações",
+      "Emaranhamento em redes de pesca",
+      "Poluição sonora dos oceanos",
+      "Mudanças climáticas"
+    ],
+    "importancia_ecologica": "Bombeiam nutrientes das profundezas para a superfície, fertilizando o oceano"
+  },
+  {
+    "id": 5,
+    "nome": "Cavalo Marinho",
+    "nome_cientifico": "Hippocampus reidi",
+    "categoria": "peixe",
+    "habitat": "marinho_costeiro",
+    "status_conservacao": "vulneravel",
+    "descricao": "Pequeno peixe único encontrado em pradarias marinhas e áreas de mangue próximas a Guriri, conhecido por sua forma peculiar.",
+    "curiosidades": [
+      "Os machos engravidam e dão à luz aos filhotes",
+      "Seus olhos se movem independentemente",
+      "Podem mudar de cor para se camuflar"
+    ],
+    "periodo_reproducao": "durante todo o ano",
+    "ameacas": [
+      "Destruição de pradarias marinhas",
+      "Captura para medicina tradicional",
+      "Poluição costeira",
+      "Aquário ilegal"
+    ],
+    "importancia_ecologica": "Controlam populações de pequenos crustáceos e são indicadores da saúde dos ecossistemas costeiros"
+  },
+  {
+    "id": 6,
+    "nome": "Salsa da Praia",
+    "nome_cientifico": "Ipomoea pes-caprae",
+    "categoria": "planta",
+    "habitat": "dunas_costeiras",
+    "status_conservacao": "comum",
+    "descricao": "Planta rasteira fundamental na fixação das dunas costeiras de Guriri, com flores roxas características e folhas carnosas.",
+    "curiosidades": [
+      "Suas sementes podem flutuar no mar por meses",
+      "Tolera alta salinidade do solo",
+      "Suas raízes podem se estender por mais de 10 metros"
+    ],
+    "periodo_reproducao": "florece durante todo o ano",
+    "ameacas": [
+      "Pisoteio por frequentadores da praia",
+      "Desenvolvimento urbano nas dunas",
+      "Veículos nas praias"
+    ],
+    "importancia_ecologica": "Estabiliza dunas, previne erosão e cria habitat para outros organismos"
+  },
+  {
+    "id": 7,
+    "nome": "Bem-te-vi",
+    "nome_cientifico": "Pitangus sulphuratus",
+    "categoria": "ave",
+    "habitat": "terrestre_costeiro",
+    "status_conservacao": "abundante",
+    "descricao": "Ave muito comum em Guriri, conhecida por seu canto característico e adaptabilidade a diferentes ambientes.",
+    "curiosidades": [
+      "Seu nome imita o som do seu canto",
+      "São onívoros e muito inteligentes",
+      "Constroem ninhos com formato de forno"
+    ],
+    "periodo_reproducao": "setembro a dezembro",
+    "ameacas": [
+      "Perda de habitat por urbanização",
+      "Uso de pesticidas"
+    ],
+    "importancia_ecologica": "Controlam populações de insetos e dispersam sementes de plantas nativas"
+  },
+  {
+    "id": 8,
+    "nome": "Gaivota",
+    "nome_cientifico": "Larus dominicanus",
+    "categoria": "ave",
+    "habitat": "marinho_costeiro",
+    "status_conservacao": "comum",
+    "descricao": "Ave marinha símbolo das praias, muito comum em Guriri, onde se alimenta de peixes e restos de alimentos.",
+    "curiosidades": [
+      "Podem beber água salgada graças a glândulas especiais",
+      "Vivem em bandos e têm comportamento social complexo",
+      "Podem viver até 30 anos"
+    ],
+    "periodo_reproducao": "outubro a janeiro",
+    "ameacas": [
+      "Poluição por plástico",
+      "Perturbação humana em áreas de nidificação"
+    ],
+    "importancia_ecologica": "Limpam praias consumindo detritos orgânicos e são indicadoras da saúde marinha"
+  },
+  {
+    "id": 9,
+    "nome": "Coqueiro",
+    "nome_cientifico": "Cocos nucifera",
+    "categoria": "planta",
+    "habitat": "costeiro",
+    "status_conservacao": "abundante",
+    "descricao": "Palmeira característica da paisagem de Guriri, importante economicamente e culturalmente para a região.",
+    "curiosidades": [
+      "Um coqueiro pode produzir até 100 cocos por ano",
+      "Suas fibras são usadas para artesanato local",
+      "Podem viver mais de 100 anos"
+    ],
+    "periodo_reproducao": "durante todo o ano",
+    "ameacas": [
+      "Pragas como o bicudo do coqueiro",
+      "Mudanças climáticas extremas"
+    ],
+    "importancia_ecologica": "Oferecem sombra, estabilizam solos costeiros e fornecem recursos para comunidades locais"
+  },
+  {
+    "id": 10,
+    "nome": "Bagre Marinho",
+    "nome_cientifico": "Cathorops spixii",
+    "categoria": "peixe",
+    "habitat": "estuarino_marinho",
+    "status_conservacao": "abundante",
+    "descricao": "Peixe de fundo muito apreciado na culinária local, frequente nas águas costeiras de Guriri e importante para a pesca artesanal.",
+    "curiosidades": [
+      "Possuem bigodes sensitivos que os ajudam a encontrar alimento",
+      "Os machos incubam os ovos na boca",
+      "Podem produzir sons para comunicação"
+    ],
+    "periodo_reproducao": "novembro a março",
+    "ameacas": [
+      "Poluição das águas costeiras",
+      "Pesca excessiva",
+      "Alteração de habitats estuarinos"
+    ],
+    "importancia_ecologica": "Importantes na cadeia alimentar bentônica e ajudam na reciclagem de nutrientes no fundo marinho"
+  }
+]
