@@ -61,8 +61,7 @@ body {
 /* Hero Section */
 .hero-section {
     height: 70vh;
-    background: linear-gradient(rgba(0, 105, 148, 0.7), rgba(74, 144, 164, 0.7)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="wave" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M0,20 Q10,10 20,20 T40,20" stroke="%23ffffff" stroke-width="1" fill="none" opacity="0.1"/></pattern></defs><rect width="1200" height="600" fill="url(%23wave)"/></svg>');
+    background: url('/static/img/praia-guriri.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
