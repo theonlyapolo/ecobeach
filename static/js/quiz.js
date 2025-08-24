@@ -29,12 +29,12 @@ const quizData = {
             question: "O que significa a palavra 'Guriri' na língua indígena?",
             options: [
                 "Água grande",
-                "Lugar dos pequenos pássaros",
+                "coco pequeno",
                 "Terra sagrada",
                 "Praia bonita"
             ],
             correct: 1,
-            explanation: "Guriri tem origem indígena e significa 'lugar dos pequenos pássaros', referindo-se à rica avifauna da região."
+            explanation: "Guriri significa coco pequeno por causa da planta encontrada na região (Allagoptera arenaria)."
         },
         {
             question: "Qual é a principal função da vegetação de restinga?",

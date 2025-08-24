@@ -37,22 +37,29 @@
         
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
-                <div class="feature-card h-100">
-                    <div class="feature-icon">
-                        <i class="fas fa-history"></i>
-                    </div>
-                    <h4>História Local</h4>
-                    <p>Conheça a rica história de Guriri e São Mateus através de uma linha do tempo interativa.</p>
-                    <a href="{{ url_for('historia') }}" class="btn btn-outline-primary">
-                        <i class="fas fa-arrow-right me-2"></i>Explorar
-                    </a>
-                </div>
-            </div>
+    <div class="feature-card h-100">
+        <div class="feature-icon">
+            <img src="{{ url_for('static', filename='img/capelinha.png') }}" 
+                 alt="História Local" 
+                 class="img-fluid rounded-circle"
+                 style="width: 60px; height: 60px; object-fit: cover;">
+        </div>
+        <h4>História Local</h4>
+        <p>Conheça a rica história de Guriri e São Mateus através de uma linha do tempo interativa.</p>
+        <a href="{{ url_for('historia') }}" class="btn btn-outline-primary">
+            <i class="fas fa-arrow-right me-2"></i>Explorar
+        </a>
+    </div>
+</div>
+
             
             <div class="col-md-6 col-lg-4">
                 <div class="feature-card h-100">
                     <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
+                        <img src="{{ url_for('static', filename='img/tartaruga.jpg') }}" 
+                 alt="Biodiversidade" 
+                 class="img-fluid rounded-circle"
+                 style="width: 60px; height: 60px; object-fit: cover;">
                     </div>
                     <h4>Biodiversidade</h4>
                     <p>Descubra a fauna e flora locais com informações detalhadas e quiz interativo.</p>
@@ -65,7 +72,10 @@
             <div class="col-md-6 col-lg-4">
                 <div class="feature-card h-100">
                     <div class="feature-icon">
-                        <i class="fas fa-utensils"></i>
+                        <img src="{{ url_for('static', filename='img/moqueca.png') }}" 
+                 alt="Cultura Caiçara" 
+                 class="img-fluid rounded-circle"
+                 style="width: 60px; height: 60px; object-fit: cover;">
                     </div>
                     <h4>Cultura Caiçara</h4>
                     <p>Explore a cultura, gastronomia e tradições dos povos caiçaras da região.</p>

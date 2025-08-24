@@ -98,8 +98,8 @@ def quiz_score():
 
 @app.route('/tamar')
 def tamar():
-    """Página sobre o Projeto Tamar em São Mateus"""
-    return render_template('tamar.html', title="Projeto Tamar", api_key=GOOGLE_MAPS_API_KEY)
+    """Página sobre o Centro Tamar em São Mateus"""
+    return render_template('tamar.html', title="Centro Tamar", api_key=GOOGLE_MAPS_API_KEY)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
