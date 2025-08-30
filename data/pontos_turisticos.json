@@ -283,5 +283,17 @@
     "endereco": "Cais dos Pescadores - Guriri, São Mateus - ES",
     "avaliacao": 4.4,
     "horario": "5h às 11h e 16h às 19h"
+  },
+  {
+    "id": 26,
+    "nome": "Casa de Cabeça pra Baixo",
+    "categoria": "turisticos",
+    "lat": -18.760803,
+    "lng": -39.764007,
+    "descricao": "Uma atração divertida onde tudo foi construído de ponta-cabeça, garantindo fotos criativas e uma experiência inusitada.",
+    "endereco": "Loteamento mar aberto, s/n - Guriri, São Mateus - ES",
+    "avaliacao": 4.6,
+    "telefone": "(27) 99794-0336",
+    "horario": "7h às 12h e 13h às 18h"
   }
 ]

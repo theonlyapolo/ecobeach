@@ -136,13 +136,13 @@
     </div>
 </section>
 
-<!-- Sobre o Projeto -->
+<!-- Sobre o Centro -->
 <section class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="text-center mb-5">
-                    <h2 class="section-title">Sobre o Projeto</h2>
+                    <h2 class="section-title">Sobre o Centro</h2>
                     <p class="text-muted">O maior programa de conservação marinha do Brasil</p>
                 </div>
                 
@@ -153,7 +153,7 @@
                             reconhecido internacionalmente pelos seus resultados na proteção dessas espécies ameaçadas.
                         </p>
                         <p>
-                            Em São Mateus, no Espírito Santo, o projeto atua desde os anos 80, protegendo importantes áreas de 
+                            Em São Mateus, no Espírito Santo, o centro atua desde os anos 80, protegendo importantes áreas de 
                             desova na região de Guriri e conscientizando a população local sobre a importância da conservação 
                             marinha.
                         </p>
@@ -217,7 +217,12 @@
             <div class="col-lg-6 mb-4">
                 <div class="turtle-card card h-100">
                     <div class="card-body p-4">
-                        <div class="species-badge">Caretta caretta</div>
+                        <div class="species-icon">
+                            <img src="{{ url_for('static', filename='img/Caretta-caretta.jpg') }}" 
+                                alt="Tartaruga-de-Pente" 
+                                class="img-fluid rounded-circle">
+                        </div>
+                        <div class="species-badge"><em>Caretta caretta</em></div>
                         <h4 class="card-title text-primary">Tartaruga-Cabeçuda</h4>
                         <span class="conservation-status status-vulnerable">Vulnerável</span>
                         
@@ -240,7 +245,12 @@
             <div class="col-lg-6 mb-4">
                 <div class="turtle-card card h-100">
                     <div class="card-body p-4">
-                        <div class="species-badge">Dermochelys coriacea</div>
+                        <div class="species-icon">
+                            <img src="{{ url_for('static', filename='img/Dermochelys-coriacea.jpg') }}" 
+                                alt="Tartaruga-de-Pente" 
+                                class="img-fluid rounded-circle">
+                        </div>
+                        <div class="species-badge"><em>Dermochelys coriacea</em></div>
                         <h4 class="card-title text-primary">Tartaruga-de-Couro</h4>
                         <span class="conservation-status status-critical">Criticamente Ameaçada</span>
                         
@@ -263,7 +273,12 @@
             <div class="col-lg-6 mb-4">
                 <div class="turtle-card card h-100">
                     <div class="card-body p-4">
-                        <div class="species-badge">Chelonia mydas</div>
+                        <div class="species-icon">
+                            <img src="{{ url_for('static', filename='img/Chelonia-mydas.jpg') }}" 
+                                alt="Tartaruga-de-Pente" 
+                                class="img-fluid rounded-circle">
+                        </div>
+                        <div class="species-badge"><em>Chelonia mydas</em></div>
                         <h4 class="card-title text-primary">Tartaruga-Verde</h4>
                         <span class="conservation-status status-endangered">Em Perigo</span>
                         
@@ -286,7 +301,12 @@
             <div class="col-lg-6 mb-4">
                 <div class="turtle-card card h-100">
                     <div class="card-body p-4">
-                        <div class="species-badge">Eretmochelys imbricata</div>
+                        <div class="species-image">
+                            <img src="{{ url_for('static', filename='img/tartaruga-de-pente.jpg') }}" 
+                                alt="Tartaruga-de-Pente" 
+                                class="img-fluid rounded-circle">
+                        </div>
+                        <div class="species-badge"><em>Eretmochelys imbricata</em></div>
                         <h4 class="card-title text-primary">Tartaruga-de-Pente</h4>
                         <span class="conservation-status status-critical">Criticamente Ameaçada</span>
                         
@@ -519,7 +539,7 @@
                     <div class="card-body text-center p-4">
                         <i class="fas fa-heart fa-3x text-danger mb-3"></i>
                         <h5>Adote uma Tartaruga</h5>
-                        <p>Contribua financeiramente com o projeto através do programa de adoção.</p>
+                        <p>Contribua financeiramente com o centro através do programa de adoção.</p>
                     </div>
                 </div>
             </div>

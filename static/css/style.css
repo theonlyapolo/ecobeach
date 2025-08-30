@@ -61,7 +61,7 @@ body {
 /* Hero Section */
 .hero-section {
     height: 70vh;
-    background: url('/static/img/praia-guriri.jpeg');
+    background: url('/static/img/praia.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -558,6 +558,22 @@ body {
 
 .col-lg-6 {
     text-align: justify;
+}
+.species-img {
+    width: 200px;       /* Largura fixa */
+    height: 200px;      /* Altura fixa */
+    object-fit: cover;  /* Corta a imagem sem distorcer */
+    border-radius: 50%; /* Mantém circular */
+    display: block;
+    margin: 0 auto;     /* Centraliza a imagem */
+}
+.foods-img {
+    width: 200px;       /* Largura fixa */
+    height: 200px;      /* Altura fixa */
+    object-fit: cover;  /* Corta a imagem sem distorcer */
+    border-radius: 50%; /* Mantém circular */
+    display: block;
+    margin: 0 auto;     /* Centraliza a imagem */
 }
 /* Responsive Design */
 @media (max-width: 768px) {

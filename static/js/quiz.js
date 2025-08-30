@@ -29,7 +29,7 @@ const quizData = {
             question: "O que significa a palavra 'Guriri' na língua indígena?",
             options: [
                 "Água grande",
-                "coco pequeno",
+                "Coco pequeno",
                 "Terra sagrada",
                 "Praia bonita"
             ],
